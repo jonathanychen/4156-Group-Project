@@ -140,6 +140,6 @@ jobs:
           key: ${{ secrets.GCP_VM_SSH_KEY }}
           script: |
             killall java
-            java -jar /app/target/teamproject-0.0.1-SNAPSHOT.jar
+            & java -jar app/target/teamproject-0.0.1-SNAPSHOT.jar
             echo "Deployment completed successfully!"
 
